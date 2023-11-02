@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import {BiMenu} from 'react-icons/bi';
+import SidebarLink from './SidebarLink';
 
 export default function Sidebar() {
   
@@ -45,7 +46,7 @@ export default function Sidebar() {
     },
     open:{
       opacity:1,
-      x:0,
+      x:15,
       transition:{
         delayChildren:0.10,
         staggerChildren:0.05,
@@ -59,21 +60,7 @@ export default function Sidebar() {
 
   }
 
-  const linkChildVariant : Variants = {
-    collapsed:{
-      opacity:0,
-      y:-5,
-    },
-    open:{
-      y:0,
-      opacity:1,
-    },
-    exit:{
-      opacity:0,
-      x:"100%"
-    }
 
-  }
 
   return (
     <motion.div id='side-nav-menu' className='text-slate-200 font-light fixed right-7 top-7 w-30'>
@@ -88,15 +75,10 @@ export default function Sidebar() {
       {
         !collapsed ?
           <motion.ul key="navlist" className='flex flex-col gap-3 mt-5 text-right text-lg' variants={linkParentVariant} initial="collapsed" animate="open" exit="exit">
-            <motion.li className={`${path === '/' ? 'text-blue-600': ''}`} variants={linkChildVariant}>
-              <Link href="/" key="home">About Me</Link>
-              </motion.li>
-            <motion.li className={`${path === '/projects' ? 'text-blue-600': ''}`} variants={linkChildVariant}>
-              <Link href="/projects" key="projects">Projects</Link>
-            </motion.li>
-            <motion.li className={`${path === '/techs' ? 'text-blue-600': ''}`} variants={linkChildVariant}>
-              <Link href="/techs" key="techs">Techs</Link>
-            </motion.li>
+            <SidebarLink linkName='About Me' hrefLink=''/>
+            <SidebarLink linkName='Projects' hrefLink='projects'/>
+            <SidebarLink linkName='Techs' hrefLink='techs'/>
+            
           </motion.ul>
         : <></>
       }
