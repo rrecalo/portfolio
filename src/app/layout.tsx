@@ -21,7 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ScrollComponent />
         <Navigation />
-        {children}
+        <div className='w-full sm:w-7xl md:w-3/4 lg:w-1/2 mx-auto'>
+          {children}
+        </div>
         </body>
     </html>
   )
