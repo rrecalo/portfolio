@@ -17,6 +17,8 @@
 }
 
 body {
+  overflow-x:hidden;
+  user-select: none !important;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +26,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  scroll-behavior:smooth;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 10px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  height: 10px;
+  -webkit-border-radius: 1ex;
 }

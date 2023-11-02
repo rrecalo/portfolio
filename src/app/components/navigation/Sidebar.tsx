@@ -42,7 +42,7 @@ export default function Sidebar() {
   const linkParentVariant : Variants = {
     collapsed:{
       opacity:0,
-      x:"100%"
+      x:"100%",
     },
     open:{
       opacity:1,
@@ -50,11 +50,11 @@ export default function Sidebar() {
       transition:{
         delayChildren:0.10,
         staggerChildren:0.05,
-      }
+      },
     },
     exit:{
       transition:{
-        staggerChildren:0.05,
+        //staggerChildren:0.05,
       }
     }
 
@@ -63,7 +63,7 @@ export default function Sidebar() {
 
 
   return (
-    <motion.div id='side-nav-menu' className='text-slate-200 font-light fixed right-7 top-7 w-30'>
+    <motion.div id='side-nav-menu' className='text-slate-200 font-light fixed right-7 top-7 w-30 z-10'>
       
       <motion.div className='flex justify-end items-centers'>
         <motion.button className='w-8 h-8' onClick={() => {setCollapsed(!collapsed)}} layout="size"
@@ -74,7 +74,7 @@ export default function Sidebar() {
       <AnimatePresence>
       {
         !collapsed ?
-          <motion.ul key="navlist" className='flex flex-col gap-3 mt-5 text-right text-lg' variants={linkParentVariant} initial="collapsed" animate="open" exit="exit">
+          <motion.ul key="navlist" className='flex flex-col py-3 mt-3 text-right text-lg ' variants={linkParentVariant} initial="collapsed" animate="open" exit="exit">
             <SidebarLink linkName='About Me' hrefLink=''/>
             <SidebarLink linkName='Projects' hrefLink='projects'/>
             <SidebarLink linkName='Techs' hrefLink='techs'/>
