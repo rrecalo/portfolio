@@ -11,19 +11,15 @@ export const metadata: Metadata = {
   description: 'A Web portfolio built on NextJS',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <ScrollComponent />
         <Navigation />
-        <div className='w-full sm:w-7xl md:w-3/4 lg:w-1/2 mx-auto'>
-          {children}
-        </div>
+          <div className='w-full sm:w-7xl md:w-3/4 lg:w-1/2 mx-auto'>
+            {children}
+          </div>
         </body>
     </html>
   )

@@ -30,13 +30,13 @@ export default function LinkButton({buttonName, buttonDesc, hrefLink} : LinkButt
     initial={{rotate:-15, y:-10, opacity:0}}
     animate={buttonControls}
     whileHover={{x:10, boxShadow: "4px 4px 0px 0px rgb(37, 99, 235, 0.5)", transition:{ease: "easeInOut"}}}>
-        <motion.p className='font-bold text-xl'>
+        <motion.p className='font-bold text-xl text-zinc-50'>
           {buttonName}
             <motion.span className="ml-2 inline-block w-fit h-fit" animate={arrowControls}>
                 {'->'}
             </motion.span>
         </motion.p>
-        <motion.p className='mt-1 text-base font-light'>
+        <motion.p className='mt-1 text-base font-light text-zinc-400'>
           {buttonDesc}
         </motion.p>
       </motion.button>
