@@ -17,7 +17,7 @@ export default function ProjectCard({title, desc} : ProjectCardProps) {
   }
 
   return (
-    <motion.div className='top-[72px] left-0 w-full mx-5 h-60 bg-zinc-950 p-5 rounded-lg'
+    <motion.div className='top-[72px] left-0 h-60 bg-zinc-950 p-5 rounded-lg'
     initial={{opacity:0}} animate={{opacity:1, width: "100%"}} onClick={()=>{openProject()}}>
         <div className='text-xl font-bold text-zinc-50'>
             {title}

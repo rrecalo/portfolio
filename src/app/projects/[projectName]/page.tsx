@@ -16,7 +16,7 @@ export default function Page() {
   }
 
   return (
-    <motion.div className='text-xl font-bold sm:mt-[72px]  p-5 rounded-lg bg-zinc-950'
+    <motion.div className='text-xl font-bold mt-[72px] mx-5 sm:mx-auto p-5 rounded-lg bg-zinc-950'
     initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}
     >
       <div className='flex justify-between items-center'>
