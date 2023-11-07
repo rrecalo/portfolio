@@ -42,7 +42,7 @@ export default function Page() {
         whileHover={{x:3, boxShadow: "2px 2px 0px 0px rgb(37, 99, 235, 0.5)", transition:{ease: "easeInOut"}}}>
           View on GitHub
         </motion.a>
-        <motion.a target="_blank" href={projectData[0]?.repo} className='px-3 py-2 text-sm  bg-black rounded-lg'
+        <motion.a target="_blank" href={projectData[0]?.deploy} className='px-3 py-2 text-sm  bg-black rounded-lg'
         initial={{y:-10, opacity:0}}
         animate={{opacity:1, y:0}}
         whileHover={{x:3, boxShadow: "2px 2px 0px 0px rgb(37, 99, 235, 0.5)", transition:{ease: "easeInOut"}}}>
