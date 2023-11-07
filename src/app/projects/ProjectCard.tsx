@@ -18,7 +18,7 @@ export default function ProjectCard({title, desc} : ProjectCardProps) {
   }
 
   return (
-    <motion.div className='relative top-[72px] left-0 h-40 bg-zinc-950 p-5 rounded-lg'
+    <motion.div className='relative top-[72px] left-0 h-25 bg-zinc-950 p-5 rounded-lg'
     initial={{opacity:0}} animate={{opacity:1, width: "100%"}} 
     onMouseEnter={()=>{setHover(true)}}
     onMouseLeave={()=>{setHover(false)}}
