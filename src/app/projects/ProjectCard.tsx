@@ -22,7 +22,7 @@ export default function ProjectCard({title, desc} : ProjectCardProps) {
     initial={{opacity:0}} animate={{opacity:1, width: "100%"}} 
     onMouseEnter={()=>{setHover(true)}}
     onMouseLeave={()=>{setHover(false)}}
-    whileHover={{x:10, boxShadow: "4px 4px 0px 0px rgb(37, 99, 235, 0.5)", transition:{ease: "easeInOut"}}}
+    whileHover={{x:3, boxShadow: "4px 4px 0px 0px rgb(37, 99, 235, 0.5)", transition:{ease: "easeInOut"}}}
     onClick={()=>{openProject()}}>
         <div className='text-xl font-bold text-zinc-50'>
             {title}
