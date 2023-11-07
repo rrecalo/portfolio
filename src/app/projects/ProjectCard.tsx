@@ -19,7 +19,7 @@ export default function ProjectCard({title, desc} : ProjectCardProps) {
 
   return (
     <motion.div className='relative top-[72px] left-0 h-25 bg-zinc-950 p-5 rounded-lg'
-    initial={{opacity:0}} animate={{opacity:1, width: "100%"}} 
+    initial={{opacity:0}} animate={{opacity:1}} 
     onMouseEnter={()=>{setHover(true)}}
     onMouseLeave={()=>{setHover(false)}}
     whileHover={{x:3, boxShadow: "4px 4px 0px 0px rgb(37, 99, 235, 0.5)", transition:{ease: "easeInOut"}}}
