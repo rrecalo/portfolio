@@ -22,6 +22,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: black;
   scroll-behavior:smooth;
+  position: absolute;
+  height:100vh !important;
 }
 
 ::-webkit-scrollbar {

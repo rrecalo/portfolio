@@ -29,9 +29,9 @@ export default function SidebarLink({linkName, hrefLink}: SidebarLinkProps) {
 
 
     return (
-        <motion.li className={`pb-3 bg-black bg-opacity-75 ${path === '/'+hrefLink ? 'text-blue-600': ''}`} variants={linkChildVariant}
+        <motion.li className={`pb-3  ${path === '/'+hrefLink ? 'text-blue-600': ''}`} variants={linkChildVariant}
         animate={{x:0}} whileHover={{x:-5}}>
-          <Link className='p-5 pe-[-20px]' href={"/"+hrefLink} key={hrefLink}>{linkName}</Link>
+          <Link className='p-2 pe-4' href={"/"+hrefLink} key={hrefLink}>{linkName}</Link>
         </motion.li>
   )
 }
