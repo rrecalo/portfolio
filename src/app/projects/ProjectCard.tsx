@@ -4,10 +4,11 @@ import { useRouter } from 'next/navigation';
 
 interface ProjectCardProps {
     title : string,
+    tags: string[],
     desc : string,
 }
 
-export default function ProjectCard({title, desc} : ProjectCardProps) {
+export default function ProjectCard({title, desc, tags} : ProjectCardProps) {
 
   const [max, setMax] = useState<boolean>(false);
   const [hover, setHover] = useState<boolean>(false);
@@ -30,6 +31,12 @@ export default function ProjectCard({title, desc} : ProjectCardProps) {
         <p className='text-sm text-zinc-400 mt-1'>
             {desc}
         </p>
+        <div className='flex gap-1 text-xs text-zinc-200 mt-2'>
+        {tags.map(tag=>(
+        <div key={tag} className='bg-blue-800 p-1 rounded-md'>
+          {tag}
+        </div>))}
+        </div>
         <motion.div className="absolute bottom-5 right-5">
           <motion.span className='text-base mr-2 text-zinc-300'
           initial={{opacity:0, y:5}} animate={hover ? {opacity:1, y:0} : {}}>
