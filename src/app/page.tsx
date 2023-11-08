@@ -4,26 +4,26 @@ import LinkButton from './components/LinkButton';
 import { useState } from 'react';
 import AboutSection from './AboutSection';
 
-export const headerVariant : Variants = {
-  initial:{
-    x:"-100vw"
-  },
-  animate:{
-    x:0,
-    transition:{
-      type:'spring',
-      stiffness:100,
-      damping:15,
-      delayChildren:0.75
-    }
-  }
-}
+
 
 export default function Home() {
 
   const [selection, setSelection] = useState<number>(0);
 
-
+  const headerVariant : Variants = {
+    initial:{
+      x:"-100vw"
+    },
+    animate:{
+      x:0,
+      transition:{
+        type:'spring',
+        stiffness:100,
+        damping:15,
+        delayChildren:0.75
+      }
+    }
+  }
 
   const subHeaderVariant : Variants = {
     initial:{
