@@ -27,7 +27,7 @@ export default function ProjectCard({title, desc} : ProjectCardProps) {
         <div className='text-xl font-bold text-zinc-50'>
             {title}
         </div>
-        <p className='text-sm text-zinc-400'>
+        <p className='text-sm text-zinc-400 mt-1'>
             {desc}
         </p>
         <motion.div className="absolute bottom-5 right-5">

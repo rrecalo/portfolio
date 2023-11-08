@@ -32,7 +32,7 @@ export default function Page() {
           {'<-'}
         </motion.div>
       </div>
-      <motion.p className='text-zinc-400 text-sm font-normal'>
+      <motion.p className='text-zinc-400 text-sm font-normal mt-1'>
         {projectData[0]?.summary}
       </motion.p>
       <div className='absolute bottom-5 left-5 flex gap-5'>
