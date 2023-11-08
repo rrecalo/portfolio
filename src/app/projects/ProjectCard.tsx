@@ -19,7 +19,7 @@ export default function ProjectCard({title, desc, tags} : ProjectCardProps) {
   }
 
   return (
-    <motion.div className='relative top-[72px] left-0 h-25 bg-zinc-950 p-5 rounded-lg'
+    <motion.div className='relative top-[72px] left-0 h-25 w-full bg-zinc-950 p-5 rounded-lg'
     initial={{opacity:0}} animate={{opacity:1}} 
     onMouseEnter={()=>{setHover(true)}}
     onMouseLeave={()=>{setHover(false)}}
@@ -31,9 +31,9 @@ export default function ProjectCard({title, desc, tags} : ProjectCardProps) {
         <p className='text-sm text-zinc-400 mt-1'>
             {desc}
         </p>
-        <div className='flex gap-1 text-xs text-zinc-200 mt-2'>
+        <div className='flex gap-2 text-xs text-blue-500 mt-2'>
         {tags.map(tag=>(
-        <div key={tag} className='bg-blue-800 p-1 rounded-md'>
+        <div key={tag} className='p-1'>
           {tag}
         </div>))}
         </div>
