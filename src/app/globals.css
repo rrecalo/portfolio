@@ -23,7 +23,8 @@ body {
   background-color: black;
   scroll-behavior:smooth;
   position: absolute;
-  height:100vh !important;
+  width:100% !important;
+  height:100% !important;
 }
 
 ::-webkit-scrollbar {
