@@ -56,18 +56,18 @@ export default function Home() {
       <motion.div id="hero" layout="size" className='text-4xl sm:text-6xl mt-0 sm:mt-10 origin-left whitespace-nowrap' variants={headerVariant} initial="initial" animate="animate">
         {"Hi, I'm Robert"}
        <motion.div className='text-xs sm:text-base font-light mt-2 whitespace-normal' variants={subHeaderVariant}>
-          <motion.p className={`inline-block`} variants={traitVariant} 
+          <motion.p className={`inline-block cursor-pointer`} variants={traitVariant} 
           animate={{color: selection === 0 ? 'rgb(59, 130, 246)' : 'rgb(255, 255, 255)'}}
           onClick={()=>{setSelection(0)}}>
             {"Software Engineer"}
           </motion.p>
-          <motion.p className={`inline-block`} variants={traitVariant} onClick={()=>{setSelection(1)}}
+          <motion.p className={`inline-block cursor-pointer`} variants={traitVariant} onClick={()=>{setSelection(1)}}
           animate={{color: selection === 1 ? 'rgb(59, 130, 246)' : 'rgb(255, 255, 255)'}}>
-          <span className='text-white mx-1'>/</span>{"Musician"}
+          <span className='text-white mx-2 cursor-default'>/</span>{"Musician"}
           </motion.p>
-          <motion.p className={`inline-block`} variants={traitVariant} onClick={()=>{setSelection(2)}}
+          <motion.p className={`inline-block cursor-pointer`} variants={traitVariant} onClick={()=>{setSelection(2)}}
           animate={{color: selection === 2 ? 'rgb(59, 130, 246)' : 'rgb(255, 255, 255)'}}>
-          <span className='text-white mx-1'>/</span>{"Leader"}
+          <span className='text-white mx-2 cursor-default'>/</span>{"Leader"}
           </motion.p>
           <motion.p className='text-xs inline-block ml-3'
           initial={{opacity:0, x:10}}
