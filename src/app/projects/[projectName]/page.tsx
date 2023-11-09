@@ -22,7 +22,7 @@ export default function Page() {
 
 
   return (
-    <motion.div className='relative text-xl h-60 mt-[72px] mx-5 sm:mx-auto p-5 rounded-lg bg-zinc-950'
+    <motion.div className='relative text-xl h-64 sm:h-60 mt-[72px] sm:mt-[80px] mx-5 sm:mx-auto p-5 rounded-lg bg-zinc-950 2xl:w-2/3'
     initial={{opacity:0}} animate={{opacity:1, transition:{type:"tween", duration:0.5}}} exit={{opacity:0}}
     >
       <div className='flex justify-between items-center font-bold text-zinc-50'>
@@ -35,7 +35,7 @@ export default function Page() {
       <motion.p className='text-zinc-400 text-sm font-normal mt-1'>
         {projectData[0]?.summary}
       </motion.p>
-      <div className='absolute bottom-5 left-5 flex gap-5'>
+      <div className='absolute bottom-5 left-5 flex gap-5 '>
         <motion.a target="_blank" href={projectData[0]?.repo} className='px-3 py-2 text-sm text-zinc-100  bg-black rounded-lg'
         initial={{y:-5, opacity:0}}
         animate={{opacity:1, y:0, transition:{delay:0.25, type:"tween", duration:0.5}}}
