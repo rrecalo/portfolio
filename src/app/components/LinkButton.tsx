@@ -16,8 +16,8 @@ export default function LinkButton({buttonName, buttonDesc, hrefLink} : LinkButt
     const arrowControls = useAnimationControls();
     //animate={{rotate:360, transition:{repeat: Infinity, repeatType:'mirror'}}}
     async function handleReroute(newPath : string){
-        arrowControls.start({rotate:360, transition:{duration:0.25}});
-        await buttonControls.start({x:"100vw", transition:{duration:0.25, delay:0.25}});
+        arrowControls.start({rotate:360, transition:{duration:0.5}});
+        await buttonControls.start({opacity:0, transition:{duration:1, delay:0.25}});
         router.push(newPath);
       }
 

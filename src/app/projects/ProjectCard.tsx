@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {motion} from 'framer-motion'
+import {Variants, motion} from 'framer-motion'
 import { useRouter } from 'next/navigation';
 
 interface ProjectCardProps {
@@ -18,9 +18,24 @@ export default function ProjectCard({title, desc, tags} : ProjectCardProps) {
     router.push("/projects/" + title);
   }
 
+  const cardVariant : Variants = {
+    initial:{
+      opacity:0,
+      x:-25,
+    },
+    animate:{
+      opacity:1,
+      x:0,
+      transition:{
+        type:"tween",
+        duration:1
+      }
+    }
+  }
+
   return (
     <motion.div className='relative top-[72px] left-0 h-25 w-full bg-zinc-950 p-5 rounded-lg'
-    initial={{opacity:0}} animate={{opacity:1}} 
+    variants={cardVariant}
     onMouseEnter={()=>{setHover(true)}}
     onMouseLeave={()=>{setHover(false)}}
     whileHover={{x:3, boxShadow: "4px 4px 0px 0px rgb(37, 99, 235, 0.5)", transition:{ease: "easeInOut"}}}
