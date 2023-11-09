@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from './components/navigation/Navigation';
 import ScrollComponent from './components/ScrollComponent';
+import HomeLinkSection from './components/LinkSection';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <Navigation />
           <div className='w-full sm:w-7xl md:w-3/4 lg:w-1/2 mx-auto'>
             {children}
+          </div>
+          <div>
+            <HomeLinkSection />
           </div>
         </body>
     </html>

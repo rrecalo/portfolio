@@ -3,6 +3,7 @@ import { AnimatePresence, motion,  Variants, } from 'framer-motion'
 import LinkButton from './components/LinkButton';
 import { useState } from 'react';
 import AboutSection from './AboutSection';
+import HomeLinkSection from './components/LinkSection';
 
 
 
@@ -76,9 +77,15 @@ export default function Home() {
       </motion.div>
       <AboutSection selection={selection}/>
       <motion.div layout="position" className='flex flex-col sm:flex-row items-center justify-center mt-20 gap-10'>
-      <LinkButton buttonName='Projects' buttonDesc="See some of the projects I've worked on" hrefLink='/projects'/>
-      {/* <LinkButton buttonName='Techs' buttonDesc='Have a quick look at the technologies I know' hrefLink='/techs'/> */}
+        <LinkButton buttonName='Projects' buttonDesc="See some of the projects I've worked on" hrefLink='/projects'/>
+        {/* <LinkButton buttonName='Techs' buttonDesc='Have a quick look at the technologies I know' hrefLink='/techs'/> */}
       </motion.div>
+      <div className=' text-zinc-400 text-[0.75rem] sm:text-sm w-full sm:w-1/2 mx-auto mt-20'>
+        {"I'm most comfortable working in the web environment, but am currently open to all engineering opportunities."}
+        <br/><br/>
+        {"Having used a variety of frameworks in the front-end and back-end, I am always looking for something new to get my hands on."}
+      </div>
+      {/* <HomeLinkSection /> */}
     </motion.div>
   )
 }
