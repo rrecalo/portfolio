@@ -2,6 +2,36 @@
 import React from 'react'
 import {Variants, motion} from 'framer-motion'
 
+const techs = {
+  languages:[
+    "HTML/CSS/JS",
+    "TypeScript",
+    "Java",
+    "C/C++/C#",
+    "Python",
+    "PHP",
+  ],
+  front:[
+    "React.js",
+    "Next.js",
+    "Redux.js",
+    "Angular.js",
+  ],
+  back:[
+    "Node.js",
+    "Express.js",
+    "ASP.NET",
+    "AWS (EC2, S3, DNS)"
+  ],
+  misc:[
+    "Agile Development",
+    "GitHub, git",
+    "Jira (Sprint/Task management)"
+  ]
+}
+
+const itemClass = "text-base text-blue-500 font-light"
+
 export default function Techs() {
 
   const headerVariant : Variants = {
