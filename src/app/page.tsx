@@ -52,8 +52,8 @@ export default function Home() {
   
 
   return (
-    <motion.div key="home" className='w-full text-slate-300 h-[300vh] mt-2 sm:mt-[52px] p-5' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0,y:20, transition:{duration:5}}}>
-      <motion.div id="hero" layout="size" className='text-4xl sm:text-6xl mt-0 sm:mt-10 origin-left whitespace-nowrap' variants={headerVariant} initial="initial" animate="animate">
+    <motion.div key="home" className='w-full text-slate-300 mt-2 sm:mt-[52px] p-5' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0,y:20, transition:{duration:5}}}>
+      <motion.div id="hero" layout="size" className='text-4xl sm:text-6xl mt-0 sm:mt-10 origin-left whitespace-nowrap text-center' variants={headerVariant} initial="initial" animate="animate">
         {"Hi, I'm Robert"}
        <motion.div className='text-xs sm:text-base font-light mt-2 whitespace-normal' variants={subHeaderVariant}>
           <motion.p className={`inline-block cursor-pointer`} variants={traitVariant} 
@@ -77,7 +77,7 @@ export default function Home() {
       <AboutSection selection={selection}/>
       <motion.div layout="position" className='flex flex-col sm:flex-row items-center justify-center mt-20 gap-10'>
       <LinkButton buttonName='Projects' buttonDesc="See some of the projects I've worked on" hrefLink='/projects'/>
-      <LinkButton buttonName='Techs' buttonDesc='Have a quick look at the technologies I know' hrefLink='/techs'/>
+      {/* <LinkButton buttonName='Techs' buttonDesc='Have a quick look at the technologies I know' hrefLink='/techs'/> */}
       </motion.div>
     </motion.div>
   )

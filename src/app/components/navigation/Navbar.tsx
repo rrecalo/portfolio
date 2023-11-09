@@ -22,7 +22,7 @@ export default function Navbar() {
         variants={navbarVariants} initial="initial" animate="enter">
             <NavbarLink linkName="Robert Recalo" hrefLink=""/>
             <NavbarLink linkName="Projects" hrefLink="projects"/>
-            <NavbarLink linkName="Techs" hrefLink="techs"/>
+            {/* <NavbarLink linkName="Techs" hrefLink="techs"/> */}
         </motion.div>
     </div>
   )

@@ -36,7 +36,7 @@ export default function AboutSection({selection} : AboutSectionProps) {
     }, [selection])
 
   return (
-    <div className='mt-3 text-zinc-300 text-[0.75rem] sm:text-sm'>
+    <div className='mt-3 text-zinc-300 text-[0.75rem] sm:text-sm w-full sm:w-1/2 mx-auto'>
         <AnimatePresence mode='popLayout'>
     {selection === 0 ?
     <motion.div key="software" className='' variants={sectionVariants} initial="initial" animate="animate" exit="exit" onAnimationComplete={()=>{setAnimated(true)}}>

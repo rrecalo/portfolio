@@ -81,7 +81,7 @@ export default function Sidebar() {
           box-shadow' variants={linkParentVariant} initial="collapsed" animate="open" exit="exit">
             <SidebarLink linkName='About Me' hrefLink=''/>
             <SidebarLink linkName='Projects' hrefLink='projects'/>
-            <SidebarLink linkName='Techs' hrefLink='techs'/>
+            {/* <SidebarLink linkName='Techs' hrefLink='techs'/> */}
             
           </motion.ul>
         : <></>

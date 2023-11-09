@@ -24,7 +24,7 @@ export default function Projects() {
   }
 
   return (
-    <motion.div key="projects" className='text-slate-300 h-[300vh] mt-2 p-5 sm:mt-[72px]' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
+    <motion.div key="projects" className='text-slate-300 mt-2 p-5 sm:mt-0' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
       <motion.div  layout="size" className='text-4xl sm:text-6xl sm:hidden origin-left whitespace-nowrap' variants={headerVariant} initial="initial" animate="animate">
         {"My Projects"}
       </motion.div>
