@@ -80,11 +80,12 @@ export default function Home() {
         <LinkButton buttonName='Projects' buttonDesc="See some of the projects I've worked on" hrefLink='/projects'/>
         {/* <LinkButton buttonName='Techs' buttonDesc='Have a quick look at the technologies I know' hrefLink='/techs'/> */}
       </motion.div>
-      <div className=' text-zinc-400 text-[0.75rem] sm:text-sm w-full sm:w-1/2 mx-auto mt-20'>
+      <motion.div className=' text-zinc-400 text-[0.75rem] sm:text-sm w-full sm:w-1/2 mx-auto mt-20'
+      initial={{opacity:0, y:-20}} animate={{opacity:1, y:0, transition:{delay:3, duration:1}}}>
         {"I'm most comfortable working in the web environment, but am currently open to all engineering opportunities."}
         <br/><br/>
         {"Having used a variety of frameworks in the front-end and back-end, I am always looking for something new to get my hands on."}
-      </div>
+      </motion.div>
       {/* <HomeLinkSection /> */}
     </motion.div>
   )

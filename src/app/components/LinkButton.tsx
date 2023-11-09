@@ -22,7 +22,7 @@ export default function LinkButton({buttonName, buttonDesc, hrefLink} : LinkButt
       }
 
     useEffect(()=>{
-        buttonControls.start({rotate:0, y:0, opacity:1, transition:{delay:2, duration:0.25}})
+        buttonControls.start({rotate:0, y:0, opacity:1, transition:{delay:2.5, duration:0.5}})
     }, [])
 
   return (
