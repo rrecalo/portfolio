@@ -84,7 +84,7 @@ export default function Home() {
       initial={{opacity:0, y:-20}} animate={{opacity:1, y:0, transition:{delay:3, duration:1}}}>
         {"I'm most comfortable working in the web environment, but am currently open to all engineering opportunities."}
         <br/><br/>
-        {"Having used a variety of frameworks across the stack, I am always looking for something new to get my hands on, and I'm currently learning/using Rust in my newest projects."}
+        {"Having used a variety of frameworks across the stack, I am always looking for something new to get my hands on. I'm currently learning/using Rust in my newest projects."}
       </motion.div>
       {/* <HomeLinkSection /> */}
     </motion.div>
