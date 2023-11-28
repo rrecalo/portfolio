@@ -3,7 +3,7 @@ export const data = [
         name:"ONote",
         subtitle:"A cloud-based WYSIWYG note-taking web application.",
         tags: ["ReactJS", "rust (tokio/axum)", "MongoDB", "auth0", "framer-motion", "tailwind-css"],
-        summary:"A single-page web application for creating, editing, storing, and organizing rich-text note documents. Equipped with note organization features including drag-n-drop and collapsible folders. Initially built n the MERN stack with robust user authentication powered by Auth0. I Recently rebuild the backend server in Rust, now it's blazingly fast!",
+        summary:"A single-page web application for creating, editing, storing, and organizing rich-text note documents. Equipped with note organization features including drag-n-drop and collapsible folders. Initially built n the MERN stack with robust user authentication powered by Auth0. I recently rebuilt the backend server in Rust - now it's blazingly fast!",
         repo:"https://github.com/rrecalo/ONote",
         deploy:"https://onote.cloud/app",
     },
