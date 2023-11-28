@@ -42,13 +42,13 @@ export default function AboutSection({selection} : AboutSectionProps) {
     <motion.div key="software" className='' variants={sectionVariants} initial="initial" animate="animate" exit="exit" onAnimationComplete={()=>{setAnimated(true)}}>
         {"With several years of programming experience in various languages and development environments, I've implemented"
         +" software solutions in some of the latest technologies."}
-        <p className='mt-2'>I firmly believe tools matter less than the person behind them.</p>
+        <p className='mt-2'>I enjoy exploring new technologies that help create mantainable, resilient and efficient software.</p>
     </motion.div>
     :
     selection === 1 ? 
     <motion.div key="music" className='' variants={sectionVariants} initial="initial" animate="animate" exit="exit">
         {"I play Piano, Acoustic Guitar, and the Bass. Having learnt three instruments, I've built discipline through long hours of practice."}
-        <p className='mt-2'>{"I know what it's like to find my way around frustration until I reach a breakthrough."}</p>
+        <p className='mt-2'>{"I know what it's like to find my way around hours of frustration until I reach a breakthrough."}</p>
         
     </motion.div>
     :
