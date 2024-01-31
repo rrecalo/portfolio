@@ -5,7 +5,7 @@ export const data = [
         tags: ["reactJS", "rust", "mongoDB", "auth0"],
         summary:"A single-page web application for creating, editing, storing, and organizing rich-text note documents. Equipped with note organization features including drag-n-drop and collapsible folders. Initially built n the MERN stack with robust user authentication powered by Auth0. I recently rebuilt the backend server in Rust - now it's blazingly fast!",
         repo:"https://github.com/rrecalo/ONote",
-        deploy:"https://onote.cloud/app",
+        deploy:"https://onote.cloud",
     },
     {
         name:"Temperature-Monitor",
