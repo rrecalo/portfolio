@@ -5,7 +5,7 @@ export const data = [
         tags: ["MERN", "auth0", "framer-motion", "tailwind-css"],
         summary:"A single-page web application for creating, editing, storing, and organizing rich-text note documents. Equipped with note organization features including drag-n-drop and collapsible folders. Built on the MERN stack with robust user authentication powered by Auth0.",
         repo:"https://github.com/rrecalo/ONote",
-        deploy:"https://onote.cloud/app",
+        deploy:"https://onote.cloud",
     },
     {
         name:"Temperature-Monitor",
@@ -29,6 +29,6 @@ export const data = [
         tags: ["NextJS", "framer-motion", "tailwind-css", "responsive"],
         summary:"A NextJS app showcasing my personality, projects, and abilities. Fully equipped with snazzy animations and a sleek colorway.",
         repo:"https://github.com/rrecalo/portfolio",
-        deploy:"https://localhost:3000",
+        deploy:"https://www.robertrecalo.com",
     },
 ]
