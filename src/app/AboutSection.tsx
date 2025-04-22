@@ -40,9 +40,8 @@ export default function AboutSection({selection} : AboutSectionProps) {
         <AnimatePresence mode='popLayout'>
     {selection === 0 ?
     <motion.div key="software" className='' variants={sectionVariants} initial="initial" animate="animate" exit="exit" onAnimationComplete={()=>{setAnimated(true)}}>
-        {"With several years of programming experience in various languages and development environments, I've implemented"
-        +" software solutions in some of the latest technologies."}
-        <p className='mt-2'>I enjoy exploring new technologies that help create maintainable, resilient and efficient software.</p>
+        {"With one year of professional IT experience and CompTIA's A+, Network+, and Security+ under my belt, I have experience in consulting, deploying, and supporting modern IT solutions."}
+        <p className='mt-2'>As a current MBA student with an undergraduate background in IT, I am looking to gain operations analysis and implementation experience in a dynamic, growing industry.</p>
     </motion.div>
     :
     selection === 1 ? 

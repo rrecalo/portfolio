@@ -60,15 +60,15 @@ export default function Home() {
           <motion.p className={`inline-block cursor-pointer`} variants={traitVariant} 
           animate={{color: selection === 0 ? 'rgb(59, 130, 246)' : 'rgb(255, 255, 255)'}}
           onClick={()=>{setSelection(0)}}>
-            {"Software Engineer"}
+            {"IT Professional"}
           </motion.p>
           <motion.p className={`inline-block cursor-pointer`} variants={traitVariant} onClick={()=>{setSelection(1)}}
           animate={{color: selection === 1 ? 'rgb(59, 130, 246)' : 'rgb(255, 255, 255)'}}>
-          <span className='text-white mx-2 cursor-default'>/</span>{"Musician"}
+          <span className='text-white mx-2 cursor-default'>/</span>{"Hobbyist Musician"}
           </motion.p>
           <motion.p className={`inline-block cursor-pointer`} variants={traitVariant} onClick={()=>{setSelection(2)}}
           animate={{color: selection === 2 ? 'rgb(59, 130, 246)' : 'rgb(255, 255, 255)'}}>
-          <span className='text-white mx-2 cursor-default'>/</span>{"Leader"}
+          <span className='text-white mx-2 cursor-default'>/</span>{"Servant Leader"}
           </motion.p>
           <motion.p className='text-xs inline-block ml-3'
           initial={{opacity:0, x:10}}
@@ -82,9 +82,8 @@ export default function Home() {
       </motion.div>
       <motion.div className=' text-zinc-400 text-[1rem] sm:text-[0.75rem] xl:text-[1rem] sm:text-sm w-full xl:w-1/2 mx-auto mt-20'
       initial={{opacity:0, y:-20}} animate={{opacity:1, y:0, transition:{delay:3, duration:1}}}>
-        {"I'm most comfortable working in the web environment, but am currently open to all engineering opportunities."}
+        {"I'm most interested in rapidly growing financial technology services sector, but am open to all opportunities for growth to gain new experiences."}
         <br/><br/>
-        {"Having used a variety of frameworks across the stack, I am always looking for something new to get my hands on. I'm currently learning/using Rust in my newest projects."}
       </motion.div>
       {/* <HomeLinkSection /> */}
     </motion.div>
